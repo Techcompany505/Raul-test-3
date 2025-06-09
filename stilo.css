@@ -1,0 +1,47 @@
+/* Contenedor principal en dos columnas */
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el lado izquierdo (información) */
+.info-contacto {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilo para el lado derecho (formulario) */
+.formulario-contacto {
+  flex: 1;
+  background-color: #e8f0fe;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Para que se vea bien en celulares */
+@media screen and (max-width: 768px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+}
